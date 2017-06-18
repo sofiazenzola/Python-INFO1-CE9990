@@ -6,19 +6,19 @@ Then tell them how many characters are in their name
 """
 
 import sys
+while True:
+    try:
+        name = input("What is your name? ")
+    except EOFError:
+        print("I'll assume your name is Bob.")
+        name = 'Bob'
 
-try:
-    name = input("What is your name? ")
-except EOFError:
-    print("I'll assume your name is Bob.")
-    name = 'Bob'
+    try:
+        name = str(name)
+    except ValueError:
+        print("I'll assume your name is Bob.")
+        name = 'Bob'
 
-try:
-    name = str(name)
-except ValueError:
-    print("I'll assume your name is Bob.")
-    name = 'Bob'
-
-length = len(name)
-print(name," is ", length, "characters long!")
+    length = len(name)
+    print(name," is ", length, "characters")
 sys.exit(0)
