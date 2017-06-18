@@ -22,5 +22,5 @@ while True:
         name = 'Bob'
 
     length = len(name)
-    print(name," is ", length, "characters")
+    print(name," is ", length, "characters long!")
 sys.exit(0)
