@@ -15,12 +15,10 @@ while True:
         print("I'll assume your name is Bob.")
         name = 'Bob'
 
-    try:
-        name = str(name)
-    except ValueError:
-        print("I'll assume your name is Bob.")
+    if name=="":
+        print("You didn't type anything. I'll assume your name is Bob.")
         name = 'Bob'
 
     length = len(name)
-    print(name," is ", length, "characters long!")
+    print(name,"is", length, "characters long!")
 sys.exit(0)
