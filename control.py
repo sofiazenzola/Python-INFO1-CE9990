@@ -17,7 +17,7 @@ while True:
     elif answer.lower()=="no":
         print("Enjoy the sun ☀")
     else:
-        print("Please type only ""yes"" or ""no""")
+        print("Please type only "\"yes"\" or "\"no""\.")
 
 
 sys.exit(0)
