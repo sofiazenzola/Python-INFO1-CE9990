@@ -24,13 +24,12 @@ for line in lines:
     except UnicodeError as unicodeError:
         print(unicodeError)
         sys.exit(1)
-    listOfLines.append(line)
-
+    listOfLines.append(s)
+lines.close()
 listOfLines.sort(key = len)
 
 for list in listOfLines:
     print(list)
 
 
-lines.close()
 sys.exit(0)
